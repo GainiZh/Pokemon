@@ -1,0 +1,11 @@
+.main-container {
+    text-align: center;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.type {
+    font-size: 20px;
+}
