@@ -1,3 +1,8 @@
+body {
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+}
+
 .main-container {
     text-align: center;
 }
