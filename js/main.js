@@ -1,7 +1,12 @@
 // configure api request
 let xhr = new XMLHttpRequest();
 // get the API data 
-xhr.open("GET", "https://pokeapi.co/api/v2/pokemon/151", true);
+xhr.open(
+  "GET",
+  `https://pokeapi.co/api/v2/pokemon/${Math.ceil(Math.random() * 151)}`,
+  true
+);
+console.log();
 
 xhr.onload = function() {
     let pokeData = JSON.parse(xhr.responseText);
