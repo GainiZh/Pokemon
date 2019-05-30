@@ -1,6 +1,6 @@
 // create a variable for a button
 let button = document.querySelector('.button');
-console.log(button);
+// console.log(button);
 
 // call API on click on the button 
 
@@ -113,17 +113,5 @@ function loaded(pokeData) {
     }
 }
 
-// keep button styles consistent
 
-button.addEventListener('click', function() {
-    button.style.backgroundImage = "url('https://i.ibb.co/MpjLY91/pokemon.jpg')";
-})
-
-button.addEventListener('mouseenter', function() {
-    button.style.backgroundImage = "url('https://cdn.shopify.com/s/files/1/2274/3743/products/1.jpg?v=1511107894')";
-})
-
-button.addEventListener('mouseleave', function() {
-    button.style.backgroundImage = "url('https://i.ibb.co/MpjLY91/pokemon.jpg')";
-})
 
