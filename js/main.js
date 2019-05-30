@@ -1,3 +1,5 @@
+let button = document.querySelector('.button');
+
 // configure api request
 let xhr = new XMLHttpRequest();
 // get the API data 
@@ -101,5 +103,7 @@ function loaded(pokeData) {
             document.body.style.color = "white";
             break;
     }
+
+
 }
 
