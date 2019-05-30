@@ -6,6 +6,9 @@ body {
     letter-spacing: 2px;
 }
 .button {
+    background-image: url('https://i.ibb.co/MpjLY91/pokemon.jpg');
+    background-size: 100%;
+    background-position: 0px -40px;
     font-size: 30px;
     height: 100px;
     width: 250px;
@@ -14,9 +17,6 @@ body {
     border-radius: 10px;
     color: yellow; 
     font-weight: bold;
-    background-image: url('https://i.ibb.co/MpjLY91/pokemon.jpg');
-    background-size: 100%;
-    background-position: 0px -40px;
 }
 
 .button:focus {
@@ -38,4 +38,4 @@ body {
 
 .type {
     font-size: 30px;
-
+}

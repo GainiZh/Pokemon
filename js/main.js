@@ -1,22 +1,30 @@
+// create a variable for a button
 let button = document.querySelector('.button');
+console.log(button);
 
-// configure api request
-let xhr = new XMLHttpRequest();
-// get the API data 
-xhr.open(
-  "GET",
-  `https://pokeapi.co/api/v2/pokemon/${Math.ceil(Math.random() * 151)}`,
-  true
-);
-console.log();
+// call API on click on the button 
 
-xhr.onload = function() {
-    let pokeData = JSON.parse(xhr.responseText);
-    console.log(pokeData);
-    loaded(pokeData);
-}
+button.addEventListener("click", function() {
+    // configure api request
+    let xhr = new XMLHttpRequest();
+    let body = document.querySelector('body');
 
-xhr.send();
+    // get the API data 
+    xhr.open(
+        "GET",
+        `https://pokeapi.co/api/v2/pokemon/${Math.floor(Math.random()*151)}/`,
+        true
+    );
+
+    xhr.onload = function() {
+        let pokeData = JSON.parse(xhr.responseText);
+        console.log(pokeData);
+        loaded(pokeData);
+    }
+
+    xhr.send();
+});
+
 
 function loaded(pokeData) {
     // name
@@ -103,7 +111,19 @@ function loaded(pokeData) {
             document.body.style.color = "white";
             break;
     }
-
-
 }
+
+// keep button styles consistent
+
+button.addEventListener('click', function() {
+    button.style.backgroundImage = "url('https://i.ibb.co/MpjLY91/pokemon.jpg')";
+})
+
+button.addEventListener('mouseenter', function() {
+    button.style.backgroundImage = "url('https://cdn.shopify.com/s/files/1/2274/3743/products/1.jpg?v=1511107894')";
+})
+
+button.addEventListener('mouseleave', function() {
+    button.style.backgroundImage = "url('https://i.ibb.co/MpjLY91/pokemon.jpg')";
+})
 
