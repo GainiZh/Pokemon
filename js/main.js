@@ -49,6 +49,12 @@ function loaded(pokeData) {
     let statType = pokeData.stats['0'].base_stat;
     statData.innerHTML = `Stat: ${statType}`;
 
+    // weight
+
+    let pokeWeight = document.querySelector('.weight');
+    let weightInfo = pokeData.weight;
+    pokeWeight.innerHTML = `Weight: ${weightInfo}`;
+
     // background images
 
     switch(typeName) {
