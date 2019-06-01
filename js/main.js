@@ -43,6 +43,12 @@ function loaded(pokeData) {
     document.querySelector('.image3').src = pokeData.sprites.front_shiny;
     document.querySelector('.image4').src = pokeData.sprites.back_shiny;
 
+    // stat
+
+    let statData = document.querySelector('.stat');
+    let statType = pokeData.stats['0'].base_stat;
+    statData.innerHTML = `Stat: ${statType}`;
+
     // background images
 
     switch(typeName) {
@@ -111,7 +117,12 @@ function loaded(pokeData) {
             document.body.style.color = "white";
             break;
     }
+    
 }
+
+
+
+
 
 
 
