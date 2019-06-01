@@ -1,17 +1,17 @@
 body {
-    background: url('https://archive-media-1.nyafuu.org/wg/image/1407/71/1407719037197.jpg');
+    background: url(pokemon.jpg) grey;
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'VT323', monospace;
     letter-spacing: 2px;
+       text-align: center;
 }
 .button {
+    background-position: center;
     background-size: 100%;
-    background-position: 0px -40px;
     font-size: 30px;
     height: 100px;
     width: 250px;
-    margin-top: 50px;
     cursor: pointer;
     border-radius: 20px;
     color: yellow; 
